@@ -19,7 +19,13 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 		<style amp-custom>
 		body {
-			background-color: white;
+			margin: 0;
+			background-color: black;
+			background-image: url(img/cloud-pixel-art_lrg.png);
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+			color: #FFF;
+    	text-align: center;
+    	text-shadow: 0 1px 3px rgba(0,0,0,.5);
 		}
 		amp-img {
 			background-color: gray;
@@ -27,11 +33,63 @@
 			padding: 2px;
 			margin: 2px;
 		}
+		h1 {margin: 24px 12px 12px 12px;}
+		.tagline { font-size: .8em; color: lightgrey;}
+		a { color: white; }
+		a:hover { color: #999; }
+		a:visited { color: lightgrey;}
+		amp-img { border: none; }
+		
+		.site-wrapper-inner { padding: 5px; }
 		</style>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
-    <h1>Welcome to Danfusion's AMP test!</h1>
-		<amp-img src="/amp-test/img/baltimore.jpg" alt="welcome" width="900" height="369"></amp-img>
+    <div class="site-wrapper">
+
+			<div class="header-img">
+				<amp-img src="img/cloud-pixel-art_lrg.png" layout="responsive" width="2048" height="999"></amp-img>	
+			</div>
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <!--<h3 class="masthead-brand">Danfusion</h3>-->
+              <!-- <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav> -->
+            </div>
+          </div>
+
+          <div class="inner cover">
+						
+            <h1 class="cover-heading">Danfusion.com</h1>
+						<p class="tagline"><em>Where Dan and the web collide!</em></p>
+            <p class="lead">Welcome to my personal website. Much like the cobbler's children this website is a work in progress. Wait. No.
+              That mangles that old proverb. Let's try again: </p>
+						<blockquote>"The busy developer's website is often under construction."</blockquote><p></p>
+            <hr>
+            <p>Twitter: <a href="https://twitter.com/danfusion" rel="noreferrer">@danfusion</a><br>
+            	LinkedIn: <a href="https://www.linkedin.com/in/danfusion" rel="noreferrer">Danfusion</a></p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>© 2015 Dan Miller</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
   </body>
 </html>
